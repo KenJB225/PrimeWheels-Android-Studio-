@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/layoutbg3">
+
+    <!-- Top Bar (Back Button, Title, Cart Button) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <!-- Back Button (Left) -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:elevation="8dp"
+            android:padding="8dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Go Back"/>
+
+        <!-- Category Title (Centered) -->
+        <TextView
+            android:id="@+id/tvCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Category Name"/>
+
+        <!-- Cart Button (Right) -->
+        <ImageButton
+            android:id="@+id/btnCart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_cart"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:elevation="8dp"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Go to Cart"/>
+    </RelativeLayout>
+
+    <!-- Product List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        app:spanCount="2"/>
+</LinearLayout>

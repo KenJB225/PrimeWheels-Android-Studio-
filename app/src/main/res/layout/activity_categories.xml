@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/layoutbg2">
+
+    <!-- Cart Button (Top Right) -->
+    <ImageButton
+        android:id="@+id/btnCart"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_cart"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:elevation="8dp"
+        android:padding="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="Go to Cart"/>
+
+    <!-- Back Button (Top Left) -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:elevation="8dp"
+        android:padding="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="Go Back"/>
+
+    <!-- GridLayout for Categories (Centered) -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/btnCars"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_car"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:elevation="4dp"
+                android:padding="4dp"/>
+
+
+            <TextView
+                android:text="Cars"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_height="20dp"
+                android:layout_width="25dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/btnBikes"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_bike"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:elevation="4dp"
+                android:padding="4dp"/>
+
+
+            <TextView
+                android:text="Bikes"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_height="20dp"
+                android:layout_width="25dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/btnMotorcycles"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_motorcycle"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:elevation="4dp"
+                android:padding="4dp"/>
+
+
+            <TextView
+                android:text="Motorcycles"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_height="20dp"
+                android:layout_width="50dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/btnAccessories"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_accessories"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:elevation="4dp"
+                android:padding="4dp"/>
+
+
+            <TextView
+                android:text="Accessories"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_height="20dp"
+                android:layout_width="55dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </GridLayout>
+</RelativeLayout>
